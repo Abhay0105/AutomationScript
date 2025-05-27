@@ -1,18 +1,18 @@
-package com.qa.nal;
-
-import com.microsoft.playwright.*;
-import com.microsoft.playwright.options.*;
-import com.qa.nal.utils.ExcelReader;
-import io.github.cdimascio.dotenv.Dotenv;
-import io.qase.commons.annotation.*;
-import java.util.*;
-import java.util.regex.Pattern;
-import org.junit.jupiter.api.*;
-import org.slf4j.*;
-
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-@DisplayName("My Application - Core User Flows")
-public class SearchTests extends BaseTest {
+    package com.qa.nal;
+    
+    import com.microsoft.playwright.*;
+    import com.microsoft.playwright.options.*;
+    import com.qa.nal.utils.ExcelReader;
+    import io.github.cdimascio.dotenv.Dotenv;
+    import io.qase.commons.annotation.*;
+    import java.util.*;
+    import java.util.regex.Pattern;
+    import org.junit.jupiter.api.*;
+    import org.slf4j.*;
+    
+    @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+    @DisplayName("My Application - Core User Flows")
+    public class SearchTests extends BaseTest {
 
     Dotenv dotenv = Dotenv.load();
     private final String username = dotenv.get("APP_USERNAME");
